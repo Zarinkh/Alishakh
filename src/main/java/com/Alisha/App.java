@@ -1,4 +1,4 @@
-package Alisha.Alisha;
+package com.Alisha;
 
 /**
  * Hello world!

@@ -1,4 +1,4 @@
-package Alisha.Alisha;
+package com.Alisha;
 
 import java.util.Iterator;
 import java.util.Set;
@@ -22,6 +22,11 @@ public class Selenium {
 	    driver.manage().timeouts().pageLoadTimeout(6000l, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(3000l, TimeUnit.SECONDS);
 	    driver.get("https://rahulshettyacademy.com/AutomationPractice/");
+	   // radio button 
+	    Thread.sleep(3000);
+	    driver.findElement(By.xpath("//input[@value='radio1']")).click();
+	    // open window button
+	    Thread.sleep(3000);
 		driver.findElement(By.xpath("//*[text()='Open Window']")).click();
 		Set<String> window = driver.getWindowHandles();
 	   Iterator<String> it = window.iterator();
